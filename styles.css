@@ -89,7 +89,8 @@ video {
 	border: 0;
 	font-size: 100%;
 	/* font: inherit; */
-	vertical-align: baseline;
+    vertical-align: baseline;
+
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -133,6 +134,7 @@ table {
 /* ------------------------------------------------------------- */
 
 body{
+    
     background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=00635Dff&noise=626262&density=20&opacity=17);
 }
 
@@ -143,31 +145,37 @@ body{
 header{
     background-color: #01172F;
     display: flex;
-    width: 100%;
+    width: 75%;
     justify-content: space-between;
     align-items: center;
-    margin-top: -20px;
-    margin-left: -10px;
     text-align: center;
-    overflow: hidden;
-    position: fixed;
-   
+    margin: 0 auto;
+    margin-top: 25px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 34px;
     color: whitesmoke;
-    margin: 25px 50px
+    margin: 25px 75px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.25px;
 }
 
 a{
     text-decoration: none !important;
     color: whitesmoke;
+    font-family: 'Judson', serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .loginButton{
-    margin: 25px 50px;
-    font-size: 20px;
+    margin: 25px 75px;
+    font-size: 18px;
+    padding: .50% 1.5%;
+    border-radius: 10px;
+    background-color: #7CAE7A;
+    letter-spacing: 1px;
 }
 
 nav ul{
@@ -178,18 +186,49 @@ nav ul{
 nav ul li{
    margin: 0 60px;
    text-align: center;
-   font-size: 16px;
+   justify-content: space-evenly;
+    padding: 1%;
+   border-bottom: 1px solid whitesmoke;
 }
 
 
-header img{
-    width: 100px;
-    height: 50px;
+
+
+
+
+
+
+
+
+.sectionOne img{
+    width: 100%
 }
 
-section{
-    width: 80%;
-    height: 10000px;
+.sectionOne{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: ;
     background-color: whitesmoke;
-    margin: 0 auto;
+    margin: 75px auto;
+    padding: 100px 100px;
+    
+}
+
+.sectionOne div{
+    width: 40%;
+
+}
+
+h2{
+    color: black;
+}
+
+footer{
+    background-color: #01172F;
+    width:100%
+}
+
+footer div p{
+    color: whitesmoke;
 }
