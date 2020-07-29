@@ -223,6 +223,9 @@ nav ul li a:hover{
  }
 
 
+.sectionOne div p{
+    font-size: 24px;
+}
 
 .sectionOne img{
     width: 100%;
@@ -299,11 +302,23 @@ footer div p{
     color: whitesmoke;
 }
 
+.git-hub-link{
+    color: black;
+    font-size: 14px;
+}
+
 @media (max-width: 500px){
 
 
     header{
+        background-color: #01172F;
+        display: flex;
         width: 80%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        border-radius: 5px;
     }
     header nav ul li{
         display: none;
