@@ -20,8 +20,8 @@ p,
 blockquote,
 pre,
 a,
-abbr,6
-acronym,
+abbr,
+6 acronym,
 address,
 big,
 cite,
@@ -84,14 +84,15 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	/* font: inherit; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /* font: inherit; */
     vertical-align: baseline;
 
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -104,46 +105,54 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol,
 ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote,
 q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* End Reset */
 
 /* ------------------------------------------------------------- */
 
-body{
-    height: 100vh;
+body {
+    margin: 0 auto;
     background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=00635Dff&noise=626262&density=20&opacity=17);
 }
 
-.master-container{
+.master-container {
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header{
+header {
     background-color: #01172F;
     display: flex;
     width: 75%;
@@ -169,7 +178,7 @@ header{
     transition: .50s;
 }
 
-a{
+a {
     text-decoration: none !important;
     color: whitesmoke;
     font-family: 'Judson', serif;
@@ -177,7 +186,7 @@ a{
     font-size: 20px;
 }
 
-.loginButton{
+.loginButton {
     margin: 25px 75px;
     font-size: 18px;
     padding: .50% 1.5%;
@@ -187,7 +196,7 @@ a{
     font-weight: 400;
 }
 
-.loginButton:hover{
+.loginButton:hover {
     background-color: #ED9B40;
     transition: .5s;
 }
@@ -195,45 +204,46 @@ a{
 
 .shrink {
     transition: 1s ease;
-    }
-    
-    .shrink:hover{
+}
+
+.shrink:hover {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(1.1);
     transition: 1.5s ease;
-    }
-
-nav ul{
-   display: flex;
-  
 }
 
-nav ul li{
-   margin: 0 60px;
-   text-align: center;
-   justify-content: space-evenly;
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    margin: 0 60px;
+    text-align: center;
+    justify-content: space-evenly;
     padding: 1%;
 }
 
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #ED9B40;
     border-bottom: 1px solid whitesmoke;
- }
+}
 
 
-.sectionOne div p{
+.sectionOne div p {
     font-size: 24px;
 }
 
-.sectionOne img{
+.sectionOne img {
     width: 100%;
     margin: 0 100px;
     border-radius: 5px;
+    box-shadow: 7.5px 10px 5px #7CAE7A;
 }
 
-.sectionOne{
+.sectionOne {
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -243,14 +253,14 @@ nav ul li a:hover{
     margin: 75px auto;
     padding: 100px 100px;
     border-radius: 10px;
-    
+
 }
 
-.sectionOne div{
+.sectionOne div {
     width: 40%;
 }
 
-.sectionTwo{
+.sectionTwo {
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -260,57 +270,289 @@ nav ul li a:hover{
     margin: 75px auto;
     padding: 100px 100px;
     border-radius: 10px;
-    
+
 }
 
-.sectionTwo div{
+.sectionTwo div {
     width: 40%;
 
 }
 
-.sectionTwo img{
+.sectionTwo div p {
+    font-size: 24px;
+}
+
+.sectionTwo img {
     width: 100%;
     margin: 0 auto;
     border-radius: 5px;
+    box-shadow: 7.5px 10px 5px #7CAE7A;
 }
 
-h2{
+h2 {
     color: black;
 }
 
-.copyright{
+.copyright {
     color: whitesmoke;
-    
+
 }
 
+.sectionOneAboutMe img {
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 2.5px gray;
+}
+
+.sectionOneAboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5% 5%;
+    border-radius: 10px;
+
+}
+
+.sectionOneAboutMe div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sectionOneAboutMe h2 {
+    font-size: 30px;
+}
+
+.sectionOneAboutMe div p {
+    font-size: 22px;
+}
+
+.sectionTwoAboutMe img {
+    width: 250px;
+    height: 250px;
+    margin-right: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 2.5px gray;
+}
+
+.sectionTwoAboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5% 5%;
+    border-radius: 10px;
+
+}
+
+.sectionTwoAboutMe div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sectionTwoAboutMe h2 {
+    font-size: 30px;
+}
+
+.sectionTwoAboutMe div p {
+    font-size: 22px;
+}
+
+.sectionThreeAboutMe img {
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 2.5px gray;
+}
+
+.sectionThreeAboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5% 5%;
+    border-radius: 10px;
+
+}
+
+.sectionThreeAboutMe div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sectionThreeAboutMe h2 {
+    font-size: 30px;
+}
+
+.sectionThreeAboutMe div p {
+    font-size: 22px;
+}
+
+.sectionFourAboutMe img {
+    width: 250px;
+    height: 250px;
+    margin-right: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 2.5px gray;
+}
+
+.sectionFourAboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5% 5%;
+    border-radius: 10px;
+
+}
+
+.sectionFourAboutMe div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sectionFourAboutMe h2 {
+    font-size: 30px;
+}
+
+.sectionFourAboutMe div p {
+    font-size: 22px;
+}
+
+.sectionFiveAboutMe img {
+    width: 250px;
+    height: 250px;
+    margin-left: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 2.5px gray;
+}
+
+.sectionFiveAboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5% 5%;
+    border-radius: 10px;
+
+}
+
+.sectionFiveAboutMe div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sectionFiveAboutMe h2 {
+    font-size: 30px;
+}
+
+.sectionFiveAboutMe div p {
+    font-size: 22px;
+}
+
+.sectionSixAboutMe img {
+    width: 250px;
+    height: 250px;
+    margin-right: 150px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 2.5px gray;
+}
+
+.sectionSixAboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5% 5%;
+    border-radius: 10px;
+
+}
+
+.sectionSixAboutMe div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sectionSixAboutMe h2 {
+    font-size: 30px;
+}
+
+.sectionSixAboutMe div p {
+    font-size: 22px;
+}
+
+
 footer {
-    margin-left: -3.5;
-    padding: 10px 4px;
+    margin-top: 50px;
+    margin-right: 0!important;
+    /* padding: 10px 4px; */
     width: 100%;
     display: flex;
     flex-direction: column;
-	justify-content: space-evenly;
-	text-align: center;
-	background-image: linear-gradient(to bottom, #00635D, #7CAE7A);
+    justify-content: space-evenly;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #00635D, #7CAE7A);
 }
 
 footer nav a {
-	margin: 0 25px;
+    margin: 0 25px;
 }
 
-footer div p{
+footer div p {
     color: whitesmoke;
 }
 
-.git-hub-link{
+.git-hub-link {
     color: black;
     font-size: 14px;
 }
 
-@media (max-width: 500px){
 
 
-    header{
+
+
+
+
+@media (max-width: 375px) {
+
+    .master-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    header {
         background-color: #01172F;
         display: flex;
         width: 80%;
@@ -319,46 +561,32 @@ footer div p{
         margin: 0 auto;
         margin-top: 25px;
         border-radius: 5px;
-    }
-    header nav ul li{
-        display: none;
-    }
-
-    .loginButton{
-        display: none;
-    }
-
-    .sectionOne img{
-        width: 100%;
-        margin: 0 auto;
-        border-radius: 5px;
-    }
-    
-    .sectionOne{
-        display: flex;
-        flex-direction: column;
-        width: 60%;
         justify-content: center;
-        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
-        margin: 0 auto;
-        margin-top: 50px;
-        padding: 10% 15%;
-        border-radius: 10px;
-        
-    }
-    
-    .sectionOne div{
-        width: 100%;
-        margin: 0 auto;
     }
 
-    .sectionTwo img{
+    header nav{
+        display: none;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    .loginButton {
+        display: none;
+    }
+
+    .sectionOne div p {
+        font-size: 16px;
+    }
+
+    .sectionOne img {
         width: 100%;
         margin: 0 auto;
         border-radius: 5px;
     }
-    
-    .sectionTwo{
+
+    .sectionOne {
         display: flex;
         flex-direction: column;
         width: 60%;
@@ -369,31 +597,645 @@ footer div p{
         margin-top: 50px;
         padding: 10% 15%;
         border-radius: 10px;
-        
+
     }
-    
-    .sectionTwo div{
+
+    .sectionOne div {
         width: 100%;
         margin: 0 auto;
     }
 
-    footer{
+    .sectionTwo div p {
+        font-size: 16px;
+    }
+
+    .sectionTwo img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionTwo {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        text-align: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionTwo div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .sectionOneAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionOneAboutMe img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 5%!important;
+    }
+
+    .sectionOneAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionOneAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionOneAboutMe div h2{
+        margin-top: -0.25rem;
+    }
+
+    .sectionTwoAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionTwoAboutMe img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionTwoAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionTwoAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionThreeAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionThreeAboutMe img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 5%!important;
+    }
+
+    .sectionThreeAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionThreeAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionThreeAboutMe div h2{
+        margin-top: -0.25rem;
+    }
+
+    .sectionFourAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionFourAboutMe img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionFourAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionFourAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionFiveAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionFiveAboutMe img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 5%!important;
+    }
+
+    .sectionFiveAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionFiveAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionFiveAboutMe div h2{
+        margin-top: -0.25rem;
+    }
+
+    .sectionSixAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionSixAboutMe img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionSixAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionSixAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer {
         margin: 0 auto;
         margin-top: 50px;
     }
 
-    footer nav{
+    footer {
+        margin-top: 50px;
+        margin-right: 0!important;
+        /* padding: 10px 4px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        background-image: linear-gradient(to bottom, #00635D, #7CAE7A);
+    }
+
+    footer nav {
         margin-top: 25px;
     }
 
-    footer div p{
-       margin-bottom: -0.5px;
+    footer div p {
+        margin-bottom: -0.5px;
     }
 
-    
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    header {
+        background-color: #01172F;
+        display: flex;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        border-radius: 5px;
+        justify-content: center;
+    }
+
+    header a{
+        margin: 0 auto;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    .loginButton {
+        display: none;
+    }
+
+    .sectionOne div p {
+        font-size: 16px;
+    }
+
+    .sectionOne img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionOne div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionTwo div p {
+        font-size: 16px;
+    }
+
+    .sectionTwo img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionTwo {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        text-align: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionTwo div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .sectionOneAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionOneAboutMe img {
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 5%!important;
+    }
+
+    .sectionOneAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        /* padding: 10% 15%; */
+        border-radius: 10px;
+
+    }
+
+    .sectionOneAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionOneAboutMe div h2{
+        margin-top: -0.25rem;
+    }
+
+    .sectionTwoAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionTwoAboutMe img {
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionTwoAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        /* padding: 10% 15%; */
+        border-radius: 10px;
+
+    }
+
+    .sectionTwoAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionThreeAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionThreeAboutMe img {
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 5%!important;
+    }
+
+    .sectionThreeAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        /* padding: 10% 15%; */
+        border-radius: 10px;
+
+    }
+
+    .sectionThreeAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionThreeAboutMe div h2{
+        margin-top: -0.25rem;
+    }
+
+    .sectionFourAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionFourAboutMe img {
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionFourAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        /* padding: 10% 15%; */
+        border-radius: 10px;
+
+    }
+
+    .sectionFourAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionFiveAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionFiveAboutMe img {
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 5%!important;
+    }
+
+    .sectionFiveAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        /* padding: 10% 15%; */
+        border-radius: 10px;
+
+    }
+
+    .sectionFiveAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionFiveAboutMe div h2{
+        margin-top: -0.25rem;
+    }
+
+    .sectionSixAboutMe div p {
+        font-size: 16px;
+    }
+
+    .sectionSixAboutMe img {
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionSixAboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        /* padding: 10% 15%; */
+        border-radius: 10px;
+
+    }
+
+    .sectionSixAboutMe div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    footer nav {
+        margin-top: 25px;
+    }
+
+    footer div p {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media(max-width: 1440px){
+
+    header {
+        background-color: #01172F;
+        display: flex;
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        border-radius: 5px;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    .loginButton {
+        display: none;
+    }
+
+    .sectionOne div p {
+        font-size: 16px;
+    }
+
+    .sectionOne img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionOne div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sectionTwo div p {
+        font-size: 16px;
+    }
+
+    .sectionTwo img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .sectionTwo {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        background-image: url(http://api.thumbr.it/whitenoise-1920x1080.png?background=f5f5f5ff&noise=626262&density=12&opacity=12);
+        /* background-color: whitesmoke; */
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
+
+    .sectionTwo div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
 
     
-
-
 
 }
