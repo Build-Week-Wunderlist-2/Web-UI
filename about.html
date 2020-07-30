@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Judson&family=Lobster&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>WunderList</title>
 </head>
 
@@ -24,97 +24,109 @@
             </ul>
         </nav>
         <a href="https://app.viriditymoon.vercel.app/sign-up" class="loginButton">Sign up</a>
+        <div id="myLinks" class="active">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
 
     <div class="master-container">
-        
+
         <section class="sectionOneAboutMe">
-            <div>
-            <h2>Alexis Villaraza</h2>
-            <p>Born in the Philippines and currently residing in Arizona, I love traveling, the outdoors, and body movement. 
-                I'm currently working on flexibility and strength training to support my aerial circus hobbies.</p>
-            <a class="git-hub-link" href="">Github link</a>
-        </div>
-            <div>
-                <img src="assests/Alexis.png" alt="">
+            <div data-aos="zoom-in-right">
+                <h2>Alexis Villaraza</h2>
+                <p>Born in the Philippines and currently residing in Arizona, I love traveling, the outdoors, and body
+                    movement.
+                    I'm currently working on flexibility and strength training to support my aerial circus hobbies.</p>
+                <a class="git-hub-link" href="https://github.com/alvillaraza" target="blank_">Github link</a>
+            </div>
+            <div data-aos="zoom-in-left">
+                <img src="assests/Alexis.png" alt="Picture of a Person">
             </div>
         </section>
 
         <section class="sectionTwoAboutMe">
-            <div>
-                <img src="assests/Zavier.jpg" alt="">
+            <div data-aos="zoom-in-right">
+                <img src="assests/Zavier.jpg" alt="Picture of a Person">
             </div>
 
-            <div>
+            <div data-aos="zoom-in-right">
                 <h2>Zavier Guadalupe</h2>
-                <p>I am Zavier Guadalupe, your friendly neighborhood web developer. 
+                <p>I am Zavier Guadalupe, your friendly neighborhood web developer.
                     I love pizza, D&D, and video games.</p>
-                     <a class="git-hub-link" href="">Github link</a>
-                </div>
-            
+                <a class="git-hub-link" href="https://github.com/zavier-lambda" target="blank_">Github link</a>
+            </div>
+
         </section>
 
-    <section class="sectionThreeAboutMe">
-        <div>
-        <h2>André Jeon </h2>
-        <p>Hi, I’m André and pineapple DOES belong on pizza, fight me.</p>
-        <a class="git-hub-link" href="">Github link</a>
-    </div>
-        <div>
-            <img src="assests/Andre.jpg" alt="">
-        </div>
-    </section>
-
-    <section class="sectionFourAboutMe">
-        <div>
-            <img src="assests/Noah.jpg" alt="">
-        </div>
-
-        <div>
-            <h2>Noah Green</h2>
-            <p>My name is Noah Green, I love eating and playing video games.
-                 I was raised in the Indianapolis, Indiana area. 
-                 I'm a lambda student and TL in the Web curriculum.</p>
-                 <a class="git-hub-link" href="">Github link</a>
+        <section class="sectionThreeAboutMe">
+            <div data-aos="fade-up">
+                <h2>André Jeon</h2>
+                <p>Hi, I’m André and pineapple DOES belong on pizza, fight me.</p>
+                <a class="git-hub-link" href="https://github.com/andre-jeon" target="blank_">Github link</a>
             </div>
-    </section>
-
-    <section class="sectionFiveAboutMe">
-        <div>
-        <h2>Anh Truong</h2>
-        <p>The only vegetable that i'll (willingly) eat are leaf green veggies. 
-            Also a lambda student and fullstack developer.</p>
-        <a class="git-hub-link" href="">Github link</a>
-    </div>
-        <div>
-            <img src="assests/Anh-Truong.jpg" alt="">
-        </div>
-    </section>
-
-    <section class="sectionSixAboutMe">
-        <div>
-            <img src="assests/Jonathan.png" alt="">
-        </div>
-
-        <div>
-            <h2>Jonathan Raczkowski</h2>
-            <p>I'm a lambda student currently studying the Full-Stack Web curriculum.
-                 I was raised in the Connecticut, but my background is Polish.</p>
-                 <a class="git-hub-link" href="">Github link</a>
+            <div data-aos="flip-left" data-aos-duration="750">
+                <img src="assests/Andre.jpg" alt="Picture of a Person">
             </div>
-    </section>
-</div>
+        </section>
+
+        <section class="sectionFourAboutMe">
+            <div data-aos="flip-right" data-aos-duration="750">
+                <img src="assests/Noah.jpg" alt="Picture of a Person">
+            </div>
+
+            <div data-aos="fade-up">
+                <h2>Noah Green</h2>
+                <p>My name is Noah Green, I love eating and playing video games.
+                    I was raised in the Indianapolis, Indiana area.
+                    I'm a lambda student and TL in the Web curriculum.</p>
+                <a class="git-hub-link" href="https://github.com/ViridityMoon" target="_blank">Github link</a>
+            </div>
+        </section>
+
+        <section class="sectionFiveAboutMe">
+            <div data-aos="fade-up">
+                <h2>Anh Truong</h2>
+                <p>The only vegetable that i'll (willingly) eat are leaf green veggies.
+                    Also a lambda student and fullstack developer.</p>
+                <a class="git-hub-link" href="https://github.com/DistortedAxiom" target="blank_">Github link</a>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="750">
+                <img src="assests/Anh-Truong.jpg" alt="Picture of a Person">
+            </div>
+        </section>
+
+        <section class="sectionSixAboutMe">
+            <div data-aos="flip-right" data-aos-duration="750">
+                <img src="assests/Jonathan.png" alt="Picture of a Person">
+            </div>
+
+            <div data-aos="fade-up">
+                <h2>Jonathan Raczkowski</h2>
+                <p>I'm a lambda student currently studying the Full-Stack Web curriculum.
+                    I was raised in the Connecticut, but my background is Polish.</p>
+                <a class="git-hub-link" href="https://github.com/JRIGS" target="blank_">Github link</a>
+            </div>
+        </section>
+    </div>
     <footer>
         <nav>
-            <a href="" class="fa fa-facebook" style="font-size: 30px;"></a>
-            <a href="" class="fa fa-twitter" style="font-size: 30px;"></a>
-            <a href="" class="fa fa-instagram" style="font-size: 30px;"></a>
+            <a href="" class="fa fa-facebook && shrink" style="font-size: 30px;"></a>
+            <a href="" class="fa fa-twitter && shrink" style="font-size: 30px;"></a>
+            <a href="" class="fa fa-instagram && shrink" style="font-size: 30px;"></a>
         </nav>
         <div>
             <p>&copy; Copyright 2020 Lorem Ipsum</p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

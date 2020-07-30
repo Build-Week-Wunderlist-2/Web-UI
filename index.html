@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <link href="https://fonts.googleapis.com/css2?family=Judson&family=Lobster&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -24,27 +24,35 @@
                 </ul>
             </nav>
             <a href="https://app.viriditymoon.vercel.app/sign-up" class="loginButton">Sign up</a>
+            <div id="myLinks" class="active">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </header>
 
         <section class="sectionOne">
-            <div>
+            <div data-aos="fade-down-right" data-aos-duration="3000">
             <h2>Problem?</h2>
             <p>Our mission is to Lorem ipsum dolor sit, amet consectetur adipisicing
                  elit. Dicta animi explicabo dignissimos ducimus quam eum omnis 
                  debitis voluptatibus non, illum facere at dolore beatae inventore 
                  nesciunt, consequatur ratione alias ullam.</p>
             </div>
-            <div>
-                <img src="assests/design-desk-display.jpg" alt="">
+            <div data-aos="fade-down-left" data-aos-duration="3000"> 
+                <img src="assests/design-desk-display.jpg" alt="Picture of stressed woman">
             </div>
         </section>
 
         <section class="sectionTwo">
-            <div>
-                <img src="assests/solution-img.jpg" alt="">
+            <div data-aos="fade-down-right" data-aos-duration="1500">
+                <img src="assests/solution-img.jpg" alt="Checklist app on tablet for solution">
             </div>
 
-            <div>
+            <div  data-aos="fade-down-left" data-aos-duration="1500">
                 <h2>Solution</h2>
                 <p>Our mission is to Lorem ipsum dolor sit, amet consectetur adipisicing
                      elit. Dicta animi explicabo dignissimos ducimus quam eum omnis 
@@ -54,17 +62,21 @@
         </section>
     </div>
 
-    <footer>
+    <footer data-aos="fade-up"
+    data-aos-duration="1500">
         <nav>
-            <a href="" class="fa fa-facebook" style="font-size: 30px;"></a>
-            <a href="" class="fa fa-twitter" style="font-size: 30px;"></a>
-            <a href="" class="fa fa-instagram" style="font-size: 30px;"></a>
+            <a href="" class="fa fa-facebook && shrink" style="font-size: 30px;"></a>
+            <a href="" class="fa fa-twitter && shrink" style="font-size: 30px;"></a>
+            <a href="" class="fa fa-instagram && shrink" style="font-size: 30px;"></a>
         </nav>
         <div>
             <p>&copy; Copyright 2020 Lorem Ipsum</p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
